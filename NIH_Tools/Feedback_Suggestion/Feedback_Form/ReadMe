@@ -1,0 +1,39 @@
+Summary:
+    ->  This tool is for regular user to provide his/her feedback regarding any issue of the tool.
+    ->  You need not required to create any relation (table) for running this feedback form tool, it will create the relation (feedbackTable) automatically if it not exists.
+		(But database with the name "test" should be present to run this. You can change it in code part, if needed.)
+    ->  Table format will be in below form:
+            
+            Sample Relation:
+            
+            feedbackTable
+            +-------+----------+-----------------+--------------+------------------------------------+
+            | state | userType |     userID      | feedbackType |              userText              |
+            +-------+----------+-----------------+--------------+------------------------------------+
+            | CG    | admin    | admin@gmail.com | tool_issue   | This tool is not working properly. |
+            | CG    | admin    | admin@gmail.com | data_issue   | This data is not valid.            |
+            +-------+----------+-----------------+--------------+------------------------------------+
+
+    ->  Field's type:
+            state - text
+            userType - text
+            userID - text
+            feedbackType - text
+            userText - text
+
+    ->  Primary Key used:
+            No primary key.
+
+Specification required:
+    ->  Postgresql Database
+    ->  any web server tool
+    ->  php5 (or above)
+
+Changeable Input:
+    ->  In feedback_upload.php :
+        ->  Database name:  test
+        ->  Host IP: localhost 
+        ->  User Name: postgres 
+        ->  Password: DSS_H@NIH
+        ->  Port: 5432
+

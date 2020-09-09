@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<head>
+	<!-- Add style attributes here... -->
+</head>
+<body>
+	<form action="feedback_preview.php" method="POST">
+	
+		<!-- NNWP States -->	
+		<b>State:</b>
+		<select name="state">
+			<option  value="AP','CG','GJ','JH','MP','MH','OD','RJ','TS">All</option>
+			<option  value="AP">Andhra Pradesh</option>
+			<option  value="CG">Chattisgarh</option>
+			<option  value="GJ">Gujarat</option>
+			<option  value="JH">Jharkhand</option>
+			<option  value="MP">Madhya Pradesh</option>
+			<option  value="MH">Maharashtra</option>
+			<option  value="OD">Odisha</option>
+			<option  value="RJ">Rajasthan</option>
+			<option  value="TS">Telangana</option>
+		</select>
+
+		<!-- Add/Edit User's type accordingly -->
+		<b>&nbsp;User Type:</b>
+		<select name="user_type">
+			<option  value="admin','userType1','userType2','userType3">All</option>
+			<option  value="admin">Admin</option>
+			<option  value="userType1">User Type-1</option>
+			<option  value="userType2">User Type-2</option>
+			<option  value="userType3">User Type-3</option>
+		</select>
+
+		<!-- Feedback/Suggestion options -->
+		<b>&nbsp;Feedback Type:</b>
+		<select name="feedback_type">
+			<option  value="error_report','data_issue','tool_issue','other_issue','feedback_suggestion">All</option>
+			<option  value="error_report">Error Reporting</option>
+			<option  value="data_issue">Data Issue</option>
+			<option  value="tool_issue">Tool Issue</option>
+			<option  value="other_issue">Other Issue</option>
+			<option  value="feedback_suggestion">Feedback/Suggestion</option>
+		</select>
+	
+		<input type="submit" value="Submit">	
+	</form>
+</body>
+</html>

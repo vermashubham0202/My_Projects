@@ -1,0 +1,34 @@
+Summary:
+    ->  This tool is for "Software Maintenance Team" (SMT) to view user's feedbacks/suggestions.
+    ->  The main objective of this tool is to make "Decision Support System" (DSS) more convenient for users by using their feedbacks/suggestions.
+    ->  This tool will fetch the data from "feedbackTable" which is updated by "Feedback_Form" tool.
+    ->  Table format will be in below form:
+            
+            Sample Relation:
+            
+            feedbackTable
+            +-------+----------+-----------------+--------------+------------------------------------+
+            | state | userType |     userID      | feedbackType |              userText              |
+            +-------+----------+-----------------+--------------+------------------------------------+
+            | CG    | admin    | admin@gmail.com | tool_issue   | This tool is not working properly. |
+            | CG    | admin    | admin@gmail.com | data_issue   | This data is not valid.            |
+            +-------+----------+-----------------+--------------+------------------------------------+
+
+    ->  You have to select only "State", "User Type" and "Feedback Type" and then it will show you the respective result.
+
+Specification required:
+    ->  Postgresql Database
+    ->  any web server tool
+    ->  php5 (or above)
+
+Changeable Input:
+    ->  In feedback_preview_index.html :
+        ->  User's type
+        ->  Feedback Type (if needed more types)
+        ->  States (if more states will be added in future)
+    ->  In feedback_preview.php :
+        ->  Database name:  test
+        ->  Host IP: localhost 
+        ->  User Name: postgres 
+        ->  Password: DSS_H@NIH
+        ->  Port: 5432
